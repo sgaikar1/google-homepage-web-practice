@@ -1,0 +1,140 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail images menu signin";
+}
+a, p{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+    font-size: 13px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+#signin{
+    grid-area: signin;
+    justify-self: center;
+    align-self: center;
+    background: rgb(55, 97, 236);
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+#main{
+    min-height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px,70px,70px,250px;
+    grid-template-areas: 
+    ". logo ." 
+    ". search ."
+     ". flexbox ."
+      ". google-text ." ;
+}
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search{
+    grid-area: search;
+    height: 30px;
+    width: 80%;
+    align-self: end;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#google-search-btn{
+    border: none;
+    padding: 10px 15px 10px 15px;   
+    margin-right: 10px;
+}
+
+#random-btn{
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+
+#google-search-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+#random-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+#google-text{
+    grid-area: google-text;
+    justify-self: center;
+    align-self: top;
+}
+
+#english {
+    color: blue;
+}
+#footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 70px 70px 70px; 
+    grid-template-rows: 50px;
+    grid-template-areas: ". privacy terms settings";
+}
+
+#privacy{
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings{
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
