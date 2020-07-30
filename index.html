@@ -16,10 +16,11 @@
         <a href="#" id="logo"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="300px" height="100px"></a>
         <input type="text" id="search">
         <div id="flexbox">
-        <button id="google-search-btn">Google Search</button>
+        <button id="google-search-btn" onclick="getInputValue()">Google Search</button>
         <button id="random-btn">I'm Feeling Lucky</button>   
         </div>
         <p id="google-text">Google offered in: <a href="#" id="english">English</a></p>     
+        <a href="#" id="output">Your entered value is: </a>
     </div>
 
     <div id="footer">
@@ -27,6 +28,14 @@
         <a href="#" id="terms">Terms</a>
         <a href="#" id="settings">Settings</a>
     </div>
+
+    <script>
+        function getInputValue(){
+            var inputVal = document.getElementById("search").value;
+            document.getElementById("output").innerHTML = "Your entered value is: "+inputVal
+            window.open("https://www.google.com/?query="+inputVal)
+        }
+    </script>
 </body>
 
 </html>

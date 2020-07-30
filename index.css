@@ -46,12 +46,13 @@ a:hover {
     min-height: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px,70px,70px,250px;
+    grid-template-rows: 250px,70px,70px,250px,50px;
     grid-template-areas: 
     ". logo ." 
     ". search ."
      ". flexbox ."
-      ". google-text ." ;
+      ". google-text ." 
+      ". output .";
 }
 #logo{
     grid-area: logo;
@@ -108,6 +109,13 @@ a:hover {
     justify-self: center;
     align-self: top;
 }
+
+#output{
+    grid-area: output;
+    justify-self: center;
+    align-self: top;
+}
+
 
 #english {
     color: blue;
